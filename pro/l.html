@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation</title>
+    <link rel="stylesheet" href="l.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Food Donation Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Donor</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showSection('addDonor')">Add Donor</a></li>
+                        <li><a href="#" onclick="showSection('donate')">Donate</a></li>
+                        <li><a href="#" onclick="showSection('donorDetails')">Donor Details</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Recipient</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="showSection('addRecipient')">Add Recipient</a></li>
+                        <li><a href="#" onclick="showSection('requestOrder')">Request Order</a></li>
+                        <li><a href="#" onclick="showSection('recipientDetails')">Recipient Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="showSection('profile')">My Profile</a></li>
+                <li><a href="#" onclick="showSection('tracking')">Tracking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sections -->
+    <section id="home" class="content active">
+        <h2>Welcome to Food Donation Platform</h2>
+        <video width="1500" height="500" controls><source src="vdo.mp4" type="video/mp4"></video>
+    </section>
+
+    <section id="about" class="content">
+            <p><H2>HII ALL...<br><br>
+                At ZERO WASTE KITCHEN, we believe that no food should go to waste when there are people in need. Our platform bridges the gap between restaurants
+                 with surplus food and orphanages, trusts, and shelters that require meals.
+                Every day, countless restaurants discard perfectly good food, while many children and individuals struggle to find their next.
+                Our mission is simple yet powerful—to turn excess into impact. By connecting generous donors with organizations that need support, we create a seamless and efficient food donation system.<br><br>
+                
+                Why Choose Us?<br>
+                ✅ Effortless Giving – Restaurants can easily list surplus food with just a few clicks.<br>
+                ✅ Instant Access – Orphanages and shelters can browse available food donations and place orders immediately.<br>
+                ✅ Real-Time Tracking – Our integrated tracking system ensures smooth and transparent food deliveries.<br>
+                ✅ A Greener Planet – By reducing food waste, we contribute to a more sustainable environment.<br><br>
+                
+                Our Vision:<br>
+                We dream of a world where hunger is not a struggle and food is never wasted. By leveraging technology and community support, we aim to create a hunger-free society, one meal at a time.
+                
+                Join us in our mission to make a difference. Whether you’re a restaurant owner looking to give back or a trust in need of support, we’re here to connect and create a meaningful impact together.
+                
+                🌱 Donate. Nourish. Transform.</H2></p></p>
+    </section>
+
+    <!-- Donor Sections -->
+    <section id="addDonor" class="content">
+        <h2>Donor Registration</h2>
+        <form id="donorForm">
+            <input type="text" placeholder="Donor Name" required>
+            <input type="text" placeholder="Restaurant Name" required>
+            <input type="text" placeholder="Address" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="donate" class="content">
+        <h2>Donate Food</h2>
+        <form id="donateForm">
+            <input type="text" placeholder="Food Name" required>
+            <input type="number" placeholder="Quantity" required>
+            <input type="file" accept="image/*" required>
+            <select>
+                <option value="available">Available</option>
+                <option value="ordered">Ordered</option>
+            </select>
+            <button type="submit">Donate</button>
+        </form>
+    </section>
+
+    <section id="donorDetails" class="content">
+        <h2>Donor Details</h2>
+        <p>List of all registered donors.</p>
+    </section>
+
+    <!-- Recipient Sections -->
+    <section id="addRecipient" class="content">
+        <h2>Recipient Registration</h2>
+        <form id="recipientForm">
+            <input type="text" placeholder="Recipient Name" required>
+            <input type="text" placeholder="Organization Name" required>
+            <input type="text" placeholder="Address" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="requestOrder" class="content">
+        <h2>Request Food Order</h2>
+        <p>List of available food donations with donor details.</p>
+    </section>
+
+    <section id="recipientDetails" class="content">
+        <h2>Recipient Details</h2>
+        <p>List of all registered recipients.</p>
+    </section>
+
+    <!-- My Profile -->
+    <section id="profile" class="content">
+        <h2>My Profile</h2>
+        <p>User-specific profile details.</p>
+    </section>
+
+    <!-- Tracking -->
+    <section id="tracking" class="content">
+        <h2>Food Tracking</h2>
+        <input type="text" placeholder="Enter tracking number">
+        <button>Track</button>
+    </section>
+
+    <script src="l.js"></script>
+</body>
+</html>

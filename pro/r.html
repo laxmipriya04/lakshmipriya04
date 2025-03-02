@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation Project</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#donar">Donar</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#add-donar">Add Donar</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#donar-details">Donar Details</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#recipient">Recipient</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#add-recipient">Add Recipient</a></li>
+                        <li><a href="#request-order">Request Order</a></li>
+                        <li><a href="#recipient-details">Recipient Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="#profile">My Profile</a></li>
+                <li><a href="#tracking">Tracking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Food Donation Project</h1>
+        <img src="k.jpg" alt="Food Donation Image">
+    </section>
+
+    <section id="about">
+        <h1><center>ABOUT US</center></h1>
+        <p><H2>HII ALL...<br><br>
+            At ZERO WASTE KITCHEN, we believe that no food should go to waste when there are people in need. Our platform bridges the gap between restaurants
+             with surplus food and orphanages, trusts, and shelters that require meals.
+            Every day, countless restaurants discard perfectly good food, while many children and individuals struggle to find their next.
+            Our mission is simple yet powerful—to turn excess into impact. By connecting generous donors with organizations that need support, we create a seamless and efficient food donation system.<br><br>
+            
+            Why Choose Us?<br>
+            ✅ Effortless Giving – Restaurants can easily list surplus food with just a few clicks.<br>
+            ✅ Instant Access – Orphanages and shelters can browse available food donations and place orders immediately.<br>
+            ✅ Real-Time Tracking – Our integrated tracking system ensures smooth and transparent food deliveries.<br>
+            ✅ A Greener Planet – By reducing food waste, we contribute to a more sustainable environment.<br><br>
+            
+            Our Vision:<br>
+            We dream of a world where hunger is not a struggle and food is never wasted. By leveraging technology and community support, we aim to create a hunger-free society, one meal at a time.
+            
+            Join us in our mission to make a difference. Whether you’re a restaurant owner looking to give back or a trust in need of support, we’re here to connect and create a meaningful impact together.
+            
+            🌱 Donate. Nourish. Transform.</H2></p>
+    </section>
+
+    <section id="add-donar">
+        <h1>Add Donar</h1>
+        <form id="donar-form">
+            <label for="donar-name">Donar Name:</label>
+            <input type="text" id="donar-name" name="donar-name" required>
+            
+            <label for="restaurant-name">Restaurant Name:</label>
+            <input type="text" id="restaurant-name" name="restaurant-name" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="contact">Contact:</label>
+            <input type="email" id="contact" name="contact" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="donate">
+        <h1>Donate Food</h1>
+        <form id="donate-form">
+            <label for="food-name">Food Name:</label>
+            <input type="text" id="food-name" name="food-name" required>
+            
+            <label for="food-quantity">Quantity:</label>
+            <input type="number" id="food-quantity" name="food-quantity" required>
+            
+            <label for="food-image">Food Image:</label>
+            <input type="file" id="food-image" name="food-image" required>
+            
+            <label for="food-status">Status:</label>
+            <select id="food-status" name="food-status">
+                <option value="available">Available</option>
+                <option value="ordered">Ordered</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="donar-details">
+        <h1>Donar Details</h1>
+        <div id="donar-list"></div>
+    </section>
+
+    <section id="add-recipient">
+        <h1>Add Recipient</h1>
+        <form id="recipient-form">
+            <label for="recipient-name">Recipient Name:</label>
+            <input type="text" id="recipient-name" name="recipient-name" required>
+            
+            <label for="organisation-name">Organisation Name:</label>
+            <input type="text" id="organisation-name" name="organisation-name" required>
+            
+            <label for="recipient-address">Address:</label>
+            <input type="text" id="recipient-address" name="recipient-address" required>
+            
+            <label for="recipient-contact">Contact:</label>
+            <input type="email" id="recipient-contact" name="recipient-contact" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="request-order">
+        <h1>Request Order</h1>
+        <div id="donate-list"></div>
+    </section>
+
+    <section id="recipient-details">
+        <h1>Recipient Details</h1>
+        <div id="recipient-list"></div>
+    </section>
+
+    <section id="profile">
+        <h1>My Profile</h1>
+        <div id="profile-details"></div>
+    </section>
+
+    <section id="tracking">
+        <h1>Tracking</h1>
+        <div id="map"></div>
+    </section>
+
+    <script src="pro.js"></script>
+</body>
+</html>
